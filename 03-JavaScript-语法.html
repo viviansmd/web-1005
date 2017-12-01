@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript语法</title>
+</head>
+<body>
+
+<!--JavaScript代码-->
+<script type="text/javascript">
+    //语法:语句,语句,函数...
+    /*一.数据类型:
+     1.数值型Number
+     2.字符串
+     3.对象
+     4.undefine
+     5.null
+
+     java定义变量:数据类型 数据名称 = 数据值
+     JavaScript定义变量:var 数据名称 = 数据值
+     JavaScript是一个弱语法的脚本,变量的类型由后面的数据值确定
+     */
+    //1.number类型
+    var a = 10;
+    console.log("a=" + a + "a的数据类型" + typeof (a));
+    a = 11.5;
+    console.log("a=" + a + "a的数据类型" + typeof (a));
+    var b = "abc";
+    console.log("字符串" + b + "类型" + typeof b);
+    //2.字符串拼接
+    var c = "hello world";
+    //两个字符串拼接
+    var d = b + c;
+    console.log(d);
+
+    //数值类型拼接字符串类型 类型自动转换
+    var dd = a + b;//number+string
+    console.log(dd);
+
+    var ddd = 11.5 + 10 + 11;
+    //如果+两边有一个是字符串类型,则另一端不是字符串类型的会自动转成字符串拼接
+    //如果两边都是number类型,则+会被当成加法运算
+    console.log(ddd);
+
+    //3.布尔类型 true false
+    var e = true;
+    console.log(e + "---" + typeof e);
+
+    var ee = e + "vivian";
+    console.log(ee + typeof ee);
+
+    //4.undefine未定义类型
+    var  f;
+    //只定义了变量名称,未给定具体值的类型都是undefine
+    console.log(typeof f);
+
+    //5.null空对象,定义了对象,但是没有给值,与undefine类似
+    var  g = null;
+    console.log(typeof g);
+
+    /*变量命名规则:
+    1.见名知意
+    2.区分大小写
+    3.由数字开头,字母,下划线,美元符组成
+    4.数字不能开头
+    5.不能用保留字,关键字
+
+     */
+
+
+
+
+</script>
+</body>
+</html>
